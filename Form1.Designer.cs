@@ -1,4 +1,6 @@
-﻿namespace My_Assembly_Code
+//Nicholas Van Vliet
+
+namespace My_Assembly_Code
 {
     partial class Form1
     {
