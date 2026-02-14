@@ -20,7 +20,7 @@ namespace My_Assembly_Code
         {
             try
             {
-                string input = richText1.Text;
+                string input = rtBoxOutPut.Text;
                 int.Parse(input);
                 labelOutput.Text = "Input is a valid integer.";
             }
