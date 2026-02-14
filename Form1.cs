@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//itsa me nick
-//new changes are here
+
 namespace My_Assembly_Code
 {
     public partial class Form1 : Form
@@ -17,6 +16,18 @@ namespace My_Assembly_Code
         {
             InitializeComponent();
         }
+        private void buttonGo_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string input = richText1.Text;
+                int.Parse(input);
+                labelOutput.Text = "Input is a valid integer.";
+            }
+            catch (Exception ex)
+            {
+                labelOutput.Text = "Input is not a valid integer: " + ex.Message;
+            }
+        }
     }
-}   ///Your a wizard Harry.
-//No youre a hairy wizard.
+}
