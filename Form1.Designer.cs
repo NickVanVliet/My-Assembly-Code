@@ -125,9 +125,9 @@ namespace My_Assembly_Code
             // 
             this.labelOutput.AutoSize = true;
             this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOutput.Location = new System.Drawing.Point(408, 46);
+            this.labelOutput.Location = new System.Drawing.Point(363, 37);
             this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(69, 22);
+            this.labelOutput.Size = new System.Drawing.Size(58, 18);
             this.labelOutput.TabIndex = 9;
             this.labelOutput.Text = "Output:";
             // 
