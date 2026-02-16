@@ -30,7 +30,7 @@ namespace My_Assembly_Code
         /// </summary>
         private void InitializeComponent()
         {
-            this.rtBoxOutPut = new System.Windows.Forms.RichTextBox();
+            this.rtBoxOutput = new System.Windows.Forms.RichTextBox();
             this.buttonGo = new System.Windows.Forms.Button();
             this.labelInPut = new System.Windows.Forms.Label();
             this.rtBoxInPut = new System.Windows.Forms.RichTextBox();
@@ -41,21 +41,22 @@ namespace My_Assembly_Code
             this.labelOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // rtBoxOutPut
+            // rtBoxOutput
             // 
-            this.rtBoxOutPut.Location = new System.Drawing.Point(312, 68);
-            this.rtBoxOutPut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtBoxOutPut.Name = "rtBoxOutPut";
-            this.rtBoxOutPut.Size = new System.Drawing.Size(209, 101);
-            this.rtBoxOutPut.TabIndex = 0;
-            this.rtBoxOutPut.Text = "";
+            this.rtBoxOutput.Location = new System.Drawing.Point(351, 85);
+            this.rtBoxOutput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rtBoxOutput.Name = "rtBoxOutput";
+            this.rtBoxOutput.ReadOnly = true;
+            this.rtBoxOutput.Size = new System.Drawing.Size(235, 125);
+            this.rtBoxOutput.TabIndex = 0;
+            this.rtBoxOutput.Text = "";
             // 
             // buttonGo
             // 
-            this.buttonGo.Location = new System.Drawing.Point(32, 175);
+            this.buttonGo.Location = new System.Drawing.Point(36, 219);
             this.buttonGo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonGo.Name = "buttonGo";
-            this.buttonGo.Size = new System.Drawing.Size(86, 32);
+            this.buttonGo.Size = new System.Drawing.Size(97, 40);
             this.buttonGo.TabIndex = 1;
             this.buttonGo.Text = "Go";
             this.buttonGo.UseVisualStyleBackColor = true;
@@ -65,17 +66,18 @@ namespace My_Assembly_Code
             // 
             this.labelInPut.AutoSize = true;
             this.labelInPut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInPut.Location = new System.Drawing.Point(29, 37);
+            this.labelInPut.Location = new System.Drawing.Point(33, 46);
             this.labelInPut.Name = "labelInPut";
-            this.labelInPut.Size = new System.Drawing.Size(83, 18);
+            this.labelInPut.Size = new System.Drawing.Size(102, 22);
             this.labelInPut.TabIndex = 3;
             this.labelInPut.Text = "Input Code:";
             // 
             // rtBoxInPut
             // 
-            this.rtBoxInPut.Location = new System.Drawing.Point(32, 68);
+            this.rtBoxInPut.Location = new System.Drawing.Point(36, 85);
+            this.rtBoxInPut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtBoxInPut.Name = "rtBoxInPut";
-            this.rtBoxInPut.Size = new System.Drawing.Size(193, 90);
+            this.rtBoxInPut.Size = new System.Drawing.Size(217, 112);
             this.rtBoxInPut.TabIndex = 4;
             this.rtBoxInPut.Text = "";
             // 
@@ -83,9 +85,9 @@ namespace My_Assembly_Code
             // 
             this.labelRegisters.AutoSize = true;
             this.labelRegisters.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRegisters.Location = new System.Drawing.Point(29, 220);
+            this.labelRegisters.Location = new System.Drawing.Point(33, 275);
             this.labelRegisters.Name = "labelRegisters";
-            this.labelRegisters.Size = new System.Drawing.Size(75, 18);
+            this.labelRegisters.Size = new System.Drawing.Size(91, 22);
             this.labelRegisters.TabIndex = 5;
             this.labelRegisters.Text = "Registers:";
             // 
@@ -93,9 +95,9 @@ namespace My_Assembly_Code
             // 
             this.labelR1.AutoSize = true;
             this.labelR1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelR1.Location = new System.Drawing.Point(110, 220);
+            this.labelR1.Location = new System.Drawing.Point(124, 275);
             this.labelR1.Name = "labelR1";
-            this.labelR1.Size = new System.Drawing.Size(43, 18);
+            this.labelR1.Size = new System.Drawing.Size(53, 22);
             this.labelR1.TabIndex = 6;
             this.labelR1.Text = "R1: 0";
             // 
@@ -103,9 +105,9 @@ namespace My_Assembly_Code
             // 
             this.labelR2.AutoSize = true;
             this.labelR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelR2.Location = new System.Drawing.Point(231, 220);
+            this.labelR2.Location = new System.Drawing.Point(260, 275);
             this.labelR2.Name = "labelR2";
-            this.labelR2.Size = new System.Drawing.Size(43, 18);
+            this.labelR2.Size = new System.Drawing.Size(53, 22);
             this.labelR2.TabIndex = 7;
             this.labelR2.Text = "R2: 0";
             // 
@@ -113,9 +115,9 @@ namespace My_Assembly_Code
             // 
             this.labelR3.AutoSize = true;
             this.labelR3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelR3.Location = new System.Drawing.Point(343, 220);
+            this.labelR3.Location = new System.Drawing.Point(386, 275);
             this.labelR3.Name = "labelR3";
-            this.labelR3.Size = new System.Drawing.Size(43, 18);
+            this.labelR3.Size = new System.Drawing.Size(53, 22);
             this.labelR3.TabIndex = 8;
             this.labelR3.Text = "R3: 0";
             // 
@@ -123,17 +125,17 @@ namespace My_Assembly_Code
             // 
             this.labelOutput.AutoSize = true;
             this.labelOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOutput.Location = new System.Drawing.Point(363, 37);
+            this.labelOutput.Location = new System.Drawing.Point(408, 46);
             this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(58, 18);
+            this.labelOutput.Size = new System.Drawing.Size(69, 22);
             this.labelOutput.TabIndex = 9;
-            this.labelOutput.Text = "OutPut:";
+            this.labelOutput.Text = "Output:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 333);
+            this.ClientSize = new System.Drawing.Size(744, 416);
             this.Controls.Add(this.labelOutput);
             this.Controls.Add(this.labelR3);
             this.Controls.Add(this.labelR2);
@@ -142,7 +144,7 @@ namespace My_Assembly_Code
             this.Controls.Add(this.rtBoxInPut);
             this.Controls.Add(this.labelInPut);
             this.Controls.Add(this.buttonGo);
-            this.Controls.Add(this.rtBoxOutPut);
+            this.Controls.Add(this.rtBoxOutput);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -153,7 +155,7 @@ namespace My_Assembly_Code
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox rtBoxOutPut;
+        private System.Windows.Forms.RichTextBox rtBoxOutput;
         private System.Windows.Forms.Button buttonGo;
         private System.Windows.Forms.Label labelInPut;
         private System.Windows.Forms.RichTextBox rtBoxInPut;
