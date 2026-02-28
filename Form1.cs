@@ -34,18 +34,6 @@ namespace My_Assembly_Code
                 return;
             }
 
-            AssemblyInput newCommand = new AssemblyInput();
-            newCommand.Command = assembly[0];
-
-            if (assembly.Length > 1)
-                newCommand.Var1 = assembly.ToString()[1];
-
-            if (assembly.Length > 2)
-                newCommand.Var2 = assembly.ToString()[2];
-
-            if (assembly.Length > 3)
-                newCommand.Var3 = assembly.ToString()[3];
-
             // LD 5 R2
             if (assembly[0] == "LD")
             {
@@ -140,6 +128,20 @@ namespace My_Assembly_Code
                 if (assembly[3] == "R3") R3 = result;
             }
 
+            // MOV R1 R2
+            else if (assembly[0] == "MOV")
+            {
+                int value = 0;
+
+                if (assembly[1] == "R1") value = R1;
+                if (assembly[1] == "R2") value = R2;
+                if (assembly[1] == "R3") value = R3;
+
+                if (assembly[2] == "R1") R1 = value;
+                if (assembly[2] == "R2") R2 = value;
+                if (assembly[2] == "R3") R3 = value;
+            }
+
             // Trp R3  
             else if (assembly[0] == "TRP")
             {
@@ -148,6 +150,32 @@ namespace My_Assembly_Code
                     rtBoxOutput.AppendText(R3.ToString() + "\n");
                 }
             }
+            UpdateRegisterDisplay();
         }
+
+        private void UpdateRegisterDisplay()
+        {
+            rtBoxOutput.AppendText (
+                "R1 = " + R1 + Environment.NewLine +
+                "R2 = " + R2 + Environment.NewLine +
+                "R3 = " + R3 + Environment.NewLine
+                );
+        }
+
     }   
 }
+
+/*
+NAME: Jose Robaina
+
+TASKS COMPLETED:
+
+- Implemented MOV instruction (MOV R# R#)
+- Fixed assembly parsing logic
+- Added register display updates
+- Implemented UpdateRegisterDisplay method
+- Debugged compile errors
+- Ensured registers update after every command
+- Tested ADD, SUB, MUL, DIV, LD, MOV, TRP commands
+
+*/
